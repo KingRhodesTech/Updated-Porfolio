@@ -22,7 +22,7 @@ st.write(content2)
 
 col3, emptyCol, col4 = st.columns([1.5, 0.5, 1.5])
 
-data = pandas.read_csv("pythonProject/data.csv", sep=";")
+data = pandas.read_csv("data.csv", sep=";")
 with col3:
     for index, row in data[:10].iterrows():
         st.header(row["title"])
